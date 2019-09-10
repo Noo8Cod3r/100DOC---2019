@@ -22,8 +22,18 @@ const isFullAge = (el) => {
     return el >= 18
 }
 
+const maxHeartRate = (el) => {
+    if (el >= 18 && el <= 81) {
+        return Math.round(206.9 - (0.67 * el))
+    } else {
+        return -1
+    }
+}
+
 let ages = arrayCalc(years, calculateAge)
 let fullAge = arrayCalc(ages, isFullAge)
+let rates = arrayCalc(ages, maxHeartRate)
 
 console.log(ages)     // [26, 51, 79, 11, 18]
 console.log(fullAge)  //  [true, true, true, false, true]
+console.log(rates)    // [189, 173, 154, -1, 195]
