@@ -46,5 +46,23 @@ console.log(rates)    // [189, 173, 154, -1, 195]
 // FUNCTIONS RETURNING FUNCTIONS
 
 const interviewQuestion = (job) => {
-  
+  if (job === 'Designer') {
+    return name => {
+      console.log(`${name}, can you explain what UX design is ?`)
+    }
+  } else if (job === 'Teacher') {
+    return name => {
+      console.log(`What subject do you teach, ${name}?`)
+    }
+  } else {
+    return name => {
+      console.log(`What do you do teach,${name}`)
+    }
+  }
 }
+
+let teacherQuestion = interviewQuestion('Teacher')
+let designerQuestion = interviewQuestion('Designer')
+
+teacherQuestion('john')
+designerQuestion('John')
