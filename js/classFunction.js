@@ -71,10 +71,26 @@ designerQuestion('John')
   ///////////////////////////////////////////////////
  // IMMIDIATLY INVOKED FUNCTION EXPRESSIONS (IIFE)//
 ///////////////////////////////////////////////////
-
-
+/*
  ( () => {
     let score = Math.random() * 10
     console.log(score >= 5)
    }
  )()
+ */
+
+  ///////////////////////////////////////////////////
+ ////////////////// CLOSURES ///////////////////////
+///////////////////////////////////////////////////
+
+const retirement = (retirementAge) => {
+  let a = ' Years left until retirement'
+  return (yearOfBirth) => {
+    let age = 2019 - yearOfBirth
+    console.log(retirementAge - age + a)
+  }
+}
+
+let retirementUS = retirement(66)
+
+retirementUS(1984)
