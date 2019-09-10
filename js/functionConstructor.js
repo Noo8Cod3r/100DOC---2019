@@ -24,7 +24,9 @@ smith.calculateAge()
 
 console.log(john.lastname)*/
 
-// or Object.create()
+// or 
+
+//Object.create()
 
 let personProto = {
   calculateAge: () => {
