@@ -68,6 +68,13 @@ teacherQuestion('john')
 designerQuestion('John')
 
 */
+  ///////////////////////////////////////////////////
+ // IMMIDIATLY INVOKED FUNCTION EXPRESSIONS (IIFE)//
+///////////////////////////////////////////////////
 
-// IMMIDIATLY INVOKED FUNCTION EXPRESSIONS (IIFE)
 
+ ( () => {
+    let score = Math.random() * 10
+    console.log(score >= 5)
+   }
+ )()
