@@ -44,7 +44,7 @@ console.log(rates)    // [189, 173, 154, -1, 195]
 */
 
 // FUNCTIONS RETURNING FUNCTIONS
-
+/*
 const interviewQuestion = (job) => {
   if (job === 'Designer') {
     return name => {
@@ -66,3 +66,8 @@ let designerQuestion = interviewQuestion('Designer')
 
 teacherQuestion('john')
 designerQuestion('John')
+
+*/
+
+// IMMIDIATLY INVOKED FUNCTION EXPRESSIONS (IIFE)
+
