@@ -30,10 +30,14 @@ const maxHeartRate = (el) => {
   }
 }
 
+
+// Calling Funcions
 let ages = arrayCalc(years, calculateAge)
 let fullAge = arrayCalc(ages, isFullAge)
 let rates = arrayCalc(ages, maxHeartRate)
 
+
+// Console Log 
 console.log(ages)     // [26, 51, 79, 11, 18]
 console.log(fullAge)  //  [true, true, true, false, true]
 console.log(rates)    // [189, 173, 154, -1, 195]
