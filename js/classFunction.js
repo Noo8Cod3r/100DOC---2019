@@ -92,5 +92,10 @@ const retirement = (retirementAge) => {
 }
 
 let retirementUS = retirement(66)
+let retirementGM = retirement(65)
+let retirementIL = retirement(67)
 
 retirementUS(1984)
+
+//
+
