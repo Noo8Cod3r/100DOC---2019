@@ -1,7 +1,7 @@
 // First-Class Functions
 
 // Passing Function as arguments
-
+/*
 let years = [1990, 1965, 1937, 2005, 1998]
 
 const arrayCalc = (arr, fn) => {
@@ -41,3 +41,10 @@ let rates = arrayCalc(ages, maxHeartRate)
 console.log(ages)     // [26, 51, 79, 11, 18]
 console.log(fullAge)  //  [true, true, true, false, true]
 console.log(rates)    // [189, 173, 154, -1, 195]
+*/
+
+// FUNCTIONS RETURNING FUNCTIONS
+
+const interviewQuestion = (job) => {
+  
+}
