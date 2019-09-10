@@ -5,29 +5,29 @@
 let years = [1990, 1965, 1937, 2005, 1998]
 
 const arrayCalc = (arr, fn) => {
-    let arrRes = []
-    for(var i =0; i < arr.length; i++) {
-        arrRes.push(fn(arr[i]))
-    }
-    return arrRes
+  let arrRes = []
+  for(var i =0; i < arr.length; i++) {
+    arrRes.push(fn(arr[i]))
+  }
+  return arrRes
 }
 
 // Callback Function
 
 const calculateAge = (el) => {
-    return 2016 - el
+  return 2016 - el
 }
 
 const isFullAge = (el) => {
-    return el >= 18
+  return el >= 18
 }
 
 const maxHeartRate = (el) => {
-    if (el >= 18 && el <= 81) {
-        return Math.round(206.9 - (0.67 * el))
-    } else {
-        return -1
-    }
+  if (el >= 18 && el <= 81) {
+    return Math.round(206.9 - (0.67 * el))
+  } else {
+    return -1
+  }
 }
 
 let ages = arrayCalc(years, calculateAge)
